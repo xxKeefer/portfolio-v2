@@ -1,0 +1,57 @@
+//main: ../media.sass
+
+body
+  width: 100vw
+  padding-top: $nav-height
+  font-family: $ubuntu-condensed
+  font-size: 0.8rem
+
+  background: --color-bg
+  color: --color-text
+
+header, footer
+  position: fixed
+  right: 0
+  width: 100%
+  height: $nav-height
+  z-index: 500
+
+header
+  top: 0
+  background: #bada55
+  display: grid
+  grid: 1fr / 40vw 1fr 1fr
+  +centerGrid
+  .logo
+    justify-self: start
+    padding-left: 1vw
+    width: 5vh
+    height: 5vh
+
+footer
+  bottom: 0
+  background: lighten(red, 30%)
+  display: grid
+  +centerGrid
+  nav
+    width: 100%
+    .nav
+      display: grid
+      grid: 1fr / repeat(5, 1fr)
+      +centerGrid
+
+
+.title
+  font-size: $title-size
+  font-family: $lobster
+  line-height: 1
+  &-sub
+    font-size: $title-size-sub
+    font-family: $ubuntu-condensed
+    padding-top: 0.5rem
+  &#main
+    font-size: $title-size-main
+
+.main-section
+  padding-left: $main-margin
+  padding-right: $main-margin

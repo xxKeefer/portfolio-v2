@@ -9,12 +9,19 @@
   font-size: 100%
   font: inherit
   vertical-align: baseline
+  list-style: none
 
 //fonts
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Condensed&display=swap")
 
 $lobster: 'Lobster', cursive
 $ubuntu-condensed: 'Ubuntu Condensed', sans-serif
+
+$title-size-main: 3rem
+$title-size: 2.5rem
+$title-size-sub: 1.3rem
+//$default-font-size: 0.8rem
+
 
 //colours
 @function hexToRGB($hex)
@@ -37,6 +44,10 @@ body
   --color-accent-two: #{$light-accent-two}
   --color-accent-two-rgb: #{hexToRGB($light-accent-two)}
 
+//common numbers
+$nav-height: 7vh
+$main-margin: 3vw
+
 //mixins
 @mixin lowerHorzRule($state)
   @if $state
@@ -48,3 +59,7 @@ body
 
 @mixin easeOut
   transition: all .8s ease-out
+
+@mixin centerGrid
+  justify-items: center
+  align-items: center
