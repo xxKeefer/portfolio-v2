@@ -2,12 +2,13 @@
 
 body
   width: 100vw
-  padding-top: $nav-height
+  margin-top: $nav-height
   font-family: $ubuntu-condensed
   font-size: 0.8rem
+  height: 200vh
 
-  background: --color-bg
-  color: --color-text
+  background: var(--color-bg)
+  color: var(--color-text)
 
 header, footer
   position: fixed
@@ -15,10 +16,10 @@ header, footer
   width: 100%
   height: $nav-height
   z-index: 500
+  background: var(--color-text)
 
 header
   top: 0
-  background: #bada55
   display: grid
   grid: 1fr / 40vw 1fr 1fr
   +centerGrid
@@ -27,10 +28,11 @@ header
     padding-left: 1vw
     width: 5vh
     height: 5vh
+    .logo-path
+      fill: var(--color-bg)
 
 footer
   bottom: 0
-  background: lighten(red, 30%)
   display: grid
   +centerGrid
   nav
@@ -39,6 +41,11 @@ footer
       display: grid
       grid: 1fr / repeat(5, 1fr)
       +centerGrid
+      &-item
+        &-link
+          color: var(--color-bg)
+          &-icon
+            font-size: 2rem
 
 
 .title
@@ -55,3 +62,15 @@ footer
 .main-section
   padding-left: $main-margin
   padding-right: $main-margin
+
+main
+  display: grid
+  +centerGrid
+  grid-row-gap: $nav-height
+
+
+.main-section
+  display: grid
+  +centerGrid
+  &:last-child
+    padding-bottom: $nav-height*2
