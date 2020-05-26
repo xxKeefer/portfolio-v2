@@ -5,6 +5,7 @@ body
   margin-top: $nav-height
   font-family: $ubuntu-condensed
   font-size: 0.8rem
+  overflow-x: hidden
   height: 200vh
 
   background: var(--color-bg)
@@ -61,8 +62,8 @@ footer
             font-size: 2rem
 
 .hidden-anchor
-  height: $nav-height*2
-  margin: -($nav-height)
+  height: $nav-height*1.2
+  margin: -($nav-height*1.2) 0 0
 
 
 .title
@@ -98,7 +99,7 @@ main
 .spotlight
   display: grid
   +centerGrid
-  grid-row-gap: $main-row-spacing
+  grid-row-gap: $spotlight-row-spacing
 
 .quote
   width: 80%

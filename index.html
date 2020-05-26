@@ -29,8 +29,12 @@
           style="paint-order:stroke markers fill" />
       </g>
     </svg>
-    <button class="btn cta-resume"> <i class="fas fa-eye"></i> resume</button>
-    <button class="btn cta-portfolio"><i class="fas fa-eye"></i> portfolio</button>
+    <a href="#a-contact" class="nav-item-link"><button class="btn cta-resume">
+      <i class="fas fa-eye"></i> resume</button>
+    </a>
+    <a href="#a-portfolio" class="nav-item-link"><button class="btn cta-portfolio">
+      <i class="fas fa-eye"></i> portfolio</button>
+    </a>
   </header>
   <footer>
     <nav>
@@ -154,11 +158,43 @@
       </section>
       <section class="spotlight">
         <ul class="contact-list">
-          <li class="contact-list-item">resume</li>
-          <li class="contact-list-item">email</li>
-          <li class="contact-list-item">twitter</li>
-          <li class="contact-list-item">linkedin</li>
-          <li class="contact-list-item">github</li>
+          <li class="contact-list-item">
+            <a class="contact-list-item-link" href="./doc/DanielKeefer_Resume.pdf" download="DanielKeefer_Resume.pdf">
+              <button class="btn cta-social">
+                <i class="fas fa-file-download"></i>
+                <span class="clickable"> Resume </span>
+              </button>
+            </a>
+          </li>
+          <li class="contact-list-item">
+            <a class="contact-list-item-link" href="#">
+              <button class="btn cta-social">
+                <i class="fas fa-envelope"></i>
+                <span class="clipable"> Email</span>
+              </button>
+            </a>
+          </li>
+          <li class="contact-list-item">
+            <a href="https://twitter.com/xxKeefer" target="_blank" class="contact-list-item-link">
+              <button class="btn cta-social">
+                <i class="fab fa-twitter"></i> Twitter
+              </button>
+            </a>
+          </li>
+          <li class="contact-list-item">
+            <a href="https://github.com/xxKeefer" target="_blank" class="contact-list-item-link">
+              <button class="btn cta-social">
+                <i class="fab fa-github"></i> GitHub
+              </button>
+            </a>
+          </li>
+          <li class="contact-list-item">
+            <a href="https://www.linkedin.com/in/xxkeefer-/" target="_blank" class="contact-list-item-link">
+              <button class="btn cta-social">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </button>
+            </a>
+          </li>
         </ul>
       </section>
     </section>
