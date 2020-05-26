@@ -1,0 +1,123 @@
+//main: ../_media.sass
+
+body
+  width: 100vw
+  margin-top: $nav-height
+  font-family: $ubuntu-condensed
+  font-size: 0.8rem
+  height: 200vh
+
+  background: var(--color-bg)
+  color: var(--color-text)
+
+header, footer
+  position: fixed
+  right: 0
+  width: 100%
+  height: $nav-height
+  z-index: 500
+  background: var(--color-text)
+
+header
+  top: 0
+  display: grid
+  grid: 1fr / 30vw 1fr 1fr
+  +centerGrid
+  .logo
+    justify-self: start
+    padding-left: 1vw
+    width: auto
+    height: 80%
+    .logo-path
+      fill: var(--color-bg)
+
+.btn
+  background: var(--color-bg)
+  color: var(--color-text)
+  border-radius: 500px
+  border-style: none
+  padding: .5rem 1rem
+  font-size: 1rem
+  font-weight: bold
+  text-transform: uppercase
+  i
+    padding-right: 0.5rem
+
+footer
+  bottom: 0
+  display: grid
+  +centerGrid
+  nav
+    width: 100%
+    .nav
+      display: grid
+      grid: 1fr / repeat(5, 1fr)
+      +centerGrid
+      direction: rtl
+      &-item
+        &-link
+          color: var(--color-bg)
+          &-icon
+            font-size: 2rem
+
+.hidden-anchor
+  height: $nav-height*2
+  margin: -($nav-height)
+
+
+.title
+  font-size: $title-size
+  font-family: $lobster
+  line-height: 1
+  &-sub
+    font-size: $title-size-sub
+    font-family: $ubuntu-condensed
+    padding-top: 0.5rem
+  &#main
+    font-size: $title-size-main
+
+main
+  display: grid
+  justify-items: center
+  align-items: start
+  grid-template-rows: 80vh auto
+  grid-row-gap: $main-row-spacing
+
+
+.main-section
+  padding-left: $main-margin
+  padding-right: $main-margin
+  display: grid
+  +centerGrid
+  grid-row-gap: 3rem
+  &:last-child
+    padding-bottom: $nav-height*1.5
+  &:first-child
+    padding-top: 1rem
+
+.spotlight
+  display: grid
+  +centerGrid
+  grid-row-gap: $main-row-spacing
+
+.quote
+  width: 80%
+  &-content
+    text-align: justify
+    font-size: 1.2rem
+    span
+      font-weight: bold
+  &-author
+    text-align: right
+    font-size: 1.2rem
+    font-family: $lobster
+
+.portrait
+  max-width: 70%
+  height: 280px
+  &-path
+    fill: var(--color-text)
+
+.cta-scroll
+  display: grid
+  +centerGrid
