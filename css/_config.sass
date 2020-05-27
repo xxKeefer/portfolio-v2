@@ -31,18 +31,21 @@ $light-color: #d4d4d4
 $dark-color: #343330
 $light-accent-one: #0267C1
 $light-accent-two: #97151B
-$dark-accent-one: #FF8600
-$dark-accent-two: #7700B5
+$dark-accent-one: #86DEB7
+$dark-accent-two: #E58500
 
 body
-  --color-bg: #{$light-color}
-  --color-bg-rgb: #{hexToRGB($light-color)}
-  --color-text: #{$dark-color}
-  --color-text-rgb: #{hexToRGB($dark-color)}
-  --color-accent-one: #{$light-accent-one}
-  --color-accent-one-rgb: #{hexToRGB($light-accent-one)}
-  --color-accent-two: #{$light-accent-two}
-  --color-accent-two-rgb: #{hexToRGB($light-accent-two)}
+  --color-bg: #{$dark-color}
+  --color-bg-rgb: #{hexToRGB($dark-color)}
+  --color-text: #{$light-color}
+  --color-text-rgb: #{hexToRGB($light-color)}
+  --color-accent-one: #{$dark-accent-one}
+  --color-accent-one-rgb: #{hexToRGB($dark-accent-one)}
+  --color-accent-two: #{$dark-accent-two}
+  --color-accent-two-rgb: #{hexToRGB($dark-accent-two)}
+
+.text-accent
+  color: var(--color-accent-two)
 
 //common numbers
 $nav-height: 7vh

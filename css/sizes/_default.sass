@@ -18,7 +18,7 @@ header, footer
   width: 100%
   height: $nav-height
   z-index: 500
-  background: var(--color-text)
+  background: var(--color-accent-one)
 
 header
   top: 0
@@ -35,7 +35,7 @@ header
 
 .btn
   background: var(--color-bg)
-  color: var(--color-text)
+  color: var(--color-accent-one)
   border-radius: 500px
   border-style: none
   padding: .5rem 1rem
@@ -44,6 +44,9 @@ header
   text-transform: uppercase
   i
     padding-right: 0.5rem
+  &:hover
+    background: var(--color-accent-two)
+    color: var(--color-bg)
 
 footer
   bottom: 0
@@ -53,14 +56,16 @@ footer
     width: 100%
     .nav
       display: grid
-      grid: 1fr / repeat(5, 1fr)
+      grid: 1fr / repeat(6, 1fr)
       +centerGrid
       direction: rtl
       &-item
         &-link
           color: var(--color-bg)
+          &:hover
+            color: var(--color-accent-two)
           &-icon
-            font-size: 2rem
+            font-size: 1.8rem
 
 .hidden-anchor
   height: $nav-height*1.2
@@ -118,8 +123,9 @@ main
   max-width: 70%
   height: 280px
   &-path
-    fill: var(--color-text)
+    fill: var(--color-accent-two)
 
 .cta-scroll
   display: grid
   +centerGrid
+  color: var(--color-accent-one)
