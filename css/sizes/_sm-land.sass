@@ -1,7 +1,7 @@
 //main: ../_media.sass
 @media only screen and (min-width: 500px) and (orientation: landscape)
   header, footer
-    position: fixed
+    position: absolute
     bottom: 0
     width: $nav-width
     height: 100vh
@@ -9,15 +9,16 @@
   header
     left: 0
     .logo
-      position: fixed
-      left: -.3%
-      top: 1%
+      position: absolute
+      left: -4%
+      top: 1.5%
       width: 6.5vw
       height: auto
     .cta-item-link
       +btnLandscape
-      position: fixed
-      left: 1.2%
+      position: absolute
+      left: 20%
+      width: 200px
     .cta-resume
       bottom: 40%
     .cta-portfolio
