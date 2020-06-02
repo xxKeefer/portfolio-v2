@@ -70,6 +70,11 @@ $spotlight-row-spacing: 2rem
   align-items: center
 
 @mixin btnLandscape
-  writing-mode: vertical-rl
+  // writing-mode: vertical-rl
   transform-origin: 0 0
   transform: rotate(270deg)
+  .btn
+    i
+      display: none
+      &.landscape
+        display: inline

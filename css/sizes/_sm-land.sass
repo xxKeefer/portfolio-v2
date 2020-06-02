@@ -1,4 +1,47 @@
 //main: ../_media.sass
 @media only screen and (min-width: 500px) and (orientation: landscape)
-  .ipsum
-    visibility: hidden
+  header, footer
+    position: fixed
+    top: 0
+    width: $nav-width
+    height: 100vh
+
+  header
+    left: 0
+    display: grid
+    grid: 4fr 1fr 1fr / 1fr
+    +centerGrid
+    grid-row-gap: 25vh
+    .logo
+      align-self: start
+      padding-top: 1vh
+      padding-left: 1vh
+      width: 6.5vw
+      height: auto
+      .logo-path
+        fill: var(--color-bg)
+    .nav-item-link
+      +btnLandscape
+      width: 33vh
+      padding-top: 3vh
+
+  footer
+    right: 0
+    display: grid
+    +centerGrid
+    nav
+      width: 100%
+      height: 100vh
+      .nav
+        height: 100%
+        display: grid
+        grid: repeat(6, 1fr) / 1fr
+        +centerGrid
+        direction: rtl
+        &-item
+          &-link
+            color: var(--color-bg)
+            &:hover
+              color: var(--color-accent-two)
+            &-icon
+              font-size: 1.8rem
