@@ -49,6 +49,7 @@ body
 
 //common numbers
 $nav-height: 7vh
+$nav-width: 7vw
 $main-margin: 3vw
 $main-row-spacing: 3rem
 $spotlight-row-spacing: 2rem
@@ -67,3 +68,8 @@ $spotlight-row-spacing: 2rem
 @mixin centerGrid
   justify-items: center
   align-items: center
+
+@mixin btnLandscape
+  writing-mode: vertical-rl
+  transform-origin: 0 0
+  transform: rotate(270deg)
