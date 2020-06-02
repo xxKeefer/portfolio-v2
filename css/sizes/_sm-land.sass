@@ -9,9 +9,8 @@
   header
     left: 0
     display: grid
-    grid: 4fr 1fr 1fr / 1fr
+    grid: 1fr 1fr 1fr / 1fr
     +centerGrid
-    grid-row-gap: 25vh
     .logo
       align-self: start
       padding-top: 1vh
@@ -20,10 +19,14 @@
       height: auto
       .logo-path
         fill: var(--color-bg)
-    .nav-item-link
+    .cta-item-link
       +btnLandscape
-      width: 33vh
-      padding-top: 3vh
+      position: fixed
+      left: 1.2%
+    .cta-resume
+      bottom: 40%
+    .cta-portfolio
+      bottom: 0%
 
   footer
     right: 0
