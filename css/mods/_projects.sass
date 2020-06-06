@@ -3,6 +3,9 @@
 .showcase
   max-width: $max-column-width
   height: fit-content
+  display: grid
+  +centerGrid
+  grid-row-gap: 2vh
   .project
     text-decoration: none
     background: var(--color-accent-one)
@@ -24,12 +27,12 @@
         width: 100%
         height: 250px
     &-name
-      font-size: 1.5rem
+      font-size: $project-name-size
       padding-bottom: 0.5rem
       text-transform: uppercase
       font-weight: bold
     &-desc
-      font-size: 1rem
+      font-size: $project-desc-size
       text-align: center
       padding: 0 1rem
       max-width: 85%
