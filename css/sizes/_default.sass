@@ -73,17 +73,21 @@ footer
   height: $nav-height*1.2
   margin: -($nav-height*1.2) 0 0
 
-
-.title
-  font-size: $title-size
-  font-family: $lobster
-  line-height: 1
-  &-sub
-    font-size: $title-size-sub
-    font-family: $ubuntu-condensed
-    padding-top: 0.5rem
-  &#main
-    font-size: $title-size-main
+.headline
+  .title
+    font-size: $title-size
+    font-family: $lobster
+    line-height: 1
+    &-sub
+      font-size: $title-size-sub
+      font-family: $ubuntu-condensed
+      padding-top: 0.5rem
+    &#main
+      font-size: $title-size-main
+  &#spoiler-reveal
+    .title
+      font-family: $ubuntu-condensed
+      text-align: center
 
 main
   display: grid
