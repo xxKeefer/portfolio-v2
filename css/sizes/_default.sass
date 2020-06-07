@@ -32,6 +32,8 @@ header
     height: 80%
     .logo-path
       fill: var(--color-bg)
+  &.larger-devices
+    display: none
 
 .btn
   background: var(--color-bg)
@@ -73,17 +75,21 @@ footer
   height: $nav-height*1.2
   margin: -($nav-height*1.2) 0 0
 
-
-.title
-  font-size: $title-size
-  font-family: $lobster
-  line-height: 1
-  &-sub
-    font-size: $title-size-sub
-    font-family: $ubuntu-condensed
-    padding-top: 0.5rem
-  &#main
-    font-size: $title-size-main
+.headline
+  .title
+    font-size: $title-size
+    font-family: $lobster
+    line-height: 1
+    &-sub
+      font-size: $title-size-sub
+      font-family: $ubuntu-condensed
+      padding-top: 0.5rem
+    &#main
+      font-size: $title-size-main
+  &#spoiler-reveal
+    .title
+      font-family: $ubuntu-condensed
+      text-align: center
 
 main
   display: grid
@@ -113,12 +119,12 @@ main
   width: 80%
   &-content
     text-align: justify
-    font-size: 1.2rem
+    font-size: $quote-size
     span
       font-weight: bold
   &-author
     text-align: right
-    font-size: 1.2rem
+    font-size: $quote-size
     font-family: $lobster
 
 .portrait

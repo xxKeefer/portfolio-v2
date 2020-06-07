@@ -2,16 +2,16 @@
 .skill
   display: grid
   +centerGrid
-  max-width: 450px
+  max-width: $max-column-width
   +lowerHorzRule(true)
   &-icon
-    font-size: 7rem
+    font-size: $skill-icon-size
     color: var(--color-accent-one)
   &-name
     color: var(--color-accent-two)
-    font-size: 2.1rem
+    font-size: $skill-name-size
     padding-bottom: 1rem
   &-desc
     padding: 0 10%
-    font-size: 1.2rem
+    font-size: $skill-desc-size
     text-align: center
